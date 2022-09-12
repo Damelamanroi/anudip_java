@@ -13,6 +13,10 @@ public class Bubble_Sort_Search {
 			   }
 		   }
 	   }
+	 
+	 
+	 
+	 
 	   public static int linearSearch(int arr[],int terget) {
 		   int i,flag=0;
 		   for(i=0;i<arr.length;i++) {
@@ -23,25 +27,30 @@ public class Bubble_Sort_Search {
 		   }
 		   return flag;
 	   }
+	   
+	   
+	   
+	   
+	   
 	   public static void main(String args[]) {
-		   Scanner sc = new Scanner (System.in);
-		   System.out.println("Enter how many element we want to insert ");
-		   int size=sc.nextInt();
+		   Scanner num = new Scanner (System.in);
+		   System.out.println("Enter how many element we want: ");
+		   int size=num.nextInt();
 		   int arr[]=new int[size];
-		   System.out.println("Enter the array element randomly");
+		   System.out.println("Enter the element:");
 		   for(int i=0;i<size;i++) {
-			   arr[i]=sc.nextInt();
+			   arr[i]=num.nextInt();
 
 		   }
-		   System.out.println(" After sorting the array elements are ");
+		   System.out.println("The elements are: ");
 
 		   bubbleSort(arr);
 		   for(int i=0;i<size;i++){
 			   System.out.println(arr[i]);
 		   }
 		   
-		   System.out.println("Enter the elemet which you want to search ");
-		   int terget=sc.nextInt();
+		   System.out.println("Which element you want to search ");
+		   int terget=num.nextInt();
 		   int result=linearSearch(arr,terget);
 		   if(result==1) {
 			   System.out.println(" The elemet is found ");
