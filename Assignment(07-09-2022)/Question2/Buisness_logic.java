@@ -12,11 +12,11 @@ class Buisness_logic {
 
 		@Test
 		void test() {
-			s1.setName("Rahul");
-			s1.setMarks1(20);
-			s1.setMarks2(20);
-			s1.setMarks3(20);
+			s1.setName("Sam");
+			s1.setMarks1(70);
+			s1.setMarks2(70);
+			s1.setMarks3(70);
 			double p=su.calpercentage(s1);
-			assertEquals(20,p);
+			assertEquals(70,p);
 		}
 }
